@@ -7,7 +7,7 @@ const navLinkClass = (base = "") => ({ isActive }: { isActive: boolean }) =>
             : "hover:text-neutral-900 text-neutral-500"
     }`;
 
-export function Navbar() {
+export default function Navbar() {
     return (
         <header>
             <div className="flex justify-between items-center max-w-7xl h-10 mx-auto px-4 rounded-lg border-2 border-gray-300 bg-neutral-50">
