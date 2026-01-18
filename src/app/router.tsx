@@ -7,17 +7,20 @@ import Inventario from "./pages/inventario/Inventario.tsx";
 import Relatorios from "./pages/relatorios/Relatorios.tsx";
 import Configuracoes from "./pages/configuracoes/Configuracoes.tsx";
 import Login from "./pages/configuracoes/Login.tsx";
+import Recuperar from "./pages/configuracoes/Recuperar.tsx";
+import NotFound from "./pages/configuracoes/NotFound.tsx";
 
 export const router = createBrowserRouter([
   {
     element: <AuthLayout />,
-    path: "/",
+    path: "/auth/",
     children: [
       { path: "login", element: <Login /> },
+      { path: "recuperar-senha", element: <Recuperar /> },
     ],
   },
   {
-    path: "/",
+    path: "/app/",
     element: <AppLayout />,
     children: [
       { index: true, element: <Dashboard /> },
@@ -26,5 +29,9 @@ export const router = createBrowserRouter([
       { path: "relatorios", element: <Relatorios /> },
       { path: "configuracoes", element: <Configuracoes /> },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
