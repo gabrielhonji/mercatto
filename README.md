@@ -1,10 +1,11 @@
 # Mercatto Dashboard
 
-Admin dashboard for managing sales, inventory and reports.
+Admin dashboard prototype for managing sales, inventory and reports.
 
 ## Tech Stack
-- Next.js
 - React
+- TypeScript
+- Vite
 - Tailwind CSS
 
 ## Features
@@ -13,4 +14,4 @@ Admin dashboard for managing sales, inventory and reports.
 - Reusable tables
 
 ## Status
-🚧 In development
+Archived prototype.
